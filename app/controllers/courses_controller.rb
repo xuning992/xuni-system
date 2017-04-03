@@ -1,15 +1,29 @@
 class CoursesController < ApplicationController
-  before_action :set_course, only: [:show, :edit, :update, :destroy]
+  before_action :set_course, only: [:show, :edit, :update, :destroy, :upvotes, :downvotes
+  ]
 
   # GET /courses
   # GET /courses.json
   def index
     @courses = Course.all
+    
   end
 
   # GET /courses/1
   # GET /courses/1.json
   def show
+  end
+  
+  # 统计分数
+  def upvotes
+    @course.votes.create
+    redirect_to(courses_path)
+  end
+  
+  # 扣分功能
+  def downvotes
+    @course.votes.take.destroy
+    redirect_to(courses_path)
   end
 
   # GET /courses/new
@@ -28,7 +42,7 @@ class CoursesController < ApplicationController
 
     respond_to do |format|
       if @course.save
-        format.html { redirect_to @course, notice: 'Course was successfully created.' }
+        # format.html { redirect_to courses_path, notice: 'Course was successfully created.' }
         format.json { render :show, status: :created, location: @course }
       else
         format.html { render :new }

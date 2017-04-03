@@ -15,10 +15,11 @@
     <% @courses.each do |course| %>
       <tr>
         <td><%= course.name %></td>
-        <td><%= course.content %></td>
-        <td><%= link_to 'Show', course %></td>
-        <td><%= link_to 'Edit', edit_course_path(course) %></td>
+        <td><%= pluralize(course.votes.count, "votes") %></td>
+        <td><%= button_to '+1', upvotes_course_path(course), method: :post %></td>
+        <td><%= button_to '-1', downvotes_course_path(course), method: :delete%></td>
         <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to course.content ,course %></td>
       </tr>
     <% end %>
   </tbody>

@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
-  resources :courses
+  resources :votes
+  resources :courses do
+    member do 
+      post 'upvotes'
+      delete 'downvotes'
+    end
+  end
+  resources :categories
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

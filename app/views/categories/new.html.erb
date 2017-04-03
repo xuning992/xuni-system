@@ -1,0 +1,10 @@
+<h1>新建品目</h1>
+<%= form_for(@category) do |f| %>
+    <div>
+        <%= f.label :name%>
+        <%= f.text_field :name,placeholder:"品目"%>
+    </div>
+    <div>
+        <%= f.submit '提交' %>
+    </div>
+<% end %>
