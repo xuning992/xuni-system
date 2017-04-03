@@ -4549,3 +4549,611 @@ ActionController::UnknownFormat (ActionController::UnknownFormat):
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.0ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:19:13 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/categories/index.html.erb:21: class/module name must be CONSTANT
+..., new_category_path, class btn-primary );@output_buffer.to_s
+...                               ^
+/home/ubuntu/workspace/app/views/categories/index.html.erb:21: class definition in method body
+..., new_category_path, class btn-primary );@output_buffer.to_s
+...                               ^
+/home/ubuntu/workspace/app/views/categories/index.html.erb:21: syntax error, unexpected '-'
+..., new_category_path, class btn-primary );@output_buffer.to_s
+...                               ^
+/home/ubuntu/workspace/app/views/categories/index.html.erb:24: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/categories/index.html.erb:21: class/module name must be CONSTANT
+  app/views/categories/index.html.erb:21: class definition in method body
+  app/views/categories/index.html.erb:21: syntax error, unexpected '-'
+  app/views/categories/index.html.erb:24: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.5ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:19:53 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (8.5ms)
+Completed 500 Internal Server Error in 274ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (Invalid CSS after "...trap-sprockets"": expected selector or at-rule, was "@import "bootst..."):
+    2: <html>
+    3: <head>
+    4:   <title>System</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.scss:18
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__991277702757532455_38960260'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.2ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:21:20 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (Invalid CSS after "...trap-sprockets"": expected selector or at-rule, was "@import "bootst..."):
+    2: <html>
+    3: <head>
+    4:   <title>System</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.scss:18
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__991277702757532455_38960260'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.8ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:24:07 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /home/ubuntu/workspace/app/assets/images
+  /home/ubuntu/workspace/app/assets/javascripts
+  /home/ubuntu/workspace/app/assets/stylesheets
+  /home/ubuntu/workspace/vendor/assets/javascripts
+  /home/ubuntu/workspace/vendor/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.3.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.3.0/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.3.0/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+    2: <html>
+    3: <head>
+    4:   <title>System</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.scss:17
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__991277702757532455_38960260'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.6ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:24:46 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /home/ubuntu/workspace/app/assets/images
+  /home/ubuntu/workspace/app/assets/javascripts
+  /home/ubuntu/workspace/app/assets/stylesheets
+  /home/ubuntu/workspace/vendor/assets/javascripts
+  /home/ubuntu/workspace/vendor/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.3.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.3.0/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.3.0/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+    2: <html>
+    3: <head>
+    4:   <title>System</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.scss:18
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__991277702757532455_38960260'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.9ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:27:31 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 5341ms (Views: 5324.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-4aa04400b4d301ab6e434e640d7da5ebdac97b69e18853cb790aa8b891af3d08.css?body=1" for 111.193.214.211 at 2017-04-03 07:27:37 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 111.193.214.211 at 2017-04-03 07:27:37 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 111.193.214.211 at 2017-04-03 07:27:37 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 111.193.214.211 at 2017-04-03 07:27:37 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 111.193.214.211 at 2017-04-03 07:27:37 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 111.193.214.211 at 2017-04-03 07:27:37 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 111.193.214.211 at 2017-04-03 07:27:38 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 111.193.214.211 at 2017-04-03 07:27:38 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 111.193.214.211 at 2017-04-03 07:27:38 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 111.193.214.211 at 2017-04-03 07:27:38 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 111.193.214.211 at 2017-04-03 07:27:38 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 111.193.214.211 at 2017-04-03 07:27:38 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 111.193.214.211 at 2017-04-03 07:27:38 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 111.193.214.211 at 2017-04-03 07:27:38 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 111.193.214.211 at 2017-04-03 07:27:38 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:28:36 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 81ms (Views: 79.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/categories/9" for 111.193.214.211 at 2017-04-03 07:28:45 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mCategory Load (0.4ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered categories/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 87ms (Views: 71.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/categories/4" for 111.193.214.211 at 2017-04-03 07:28:50 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered categories/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 67ms (Views: 64.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories/new" for 111.193.214.211 at 2017-04-03 07:28:57 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (57.1ms)
+Completed 200 OK in 153ms (Views: 151.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:35:13 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (5.0ms)
+  Rendered common/_navbar.html.erb (0.5ms)
+  Rendered common/_footer.html.erb (0.3ms)
+Completed 200 OK in 82ms (Views: 80.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:37:58 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (4.8ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_footer.html.erb (0.5ms)
+Completed 200 OK in 84ms (Views: 82.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:43:42 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (Couldn't find FlashHelper, expected it to be defined in helpers/flash_helper.rb):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/categories_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (87.5ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:44:39 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.6ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (9.0ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.4ms)
+  Rendered common/_footer.html.erb (0.1ms)
+Completed 200 OK in 106ms (Views: 101.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:46:06 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (7.4ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.0ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 79ms (Views: 74.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:46:11 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (3.6ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.0ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 88ms (Views: 87.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:46:15 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (3.1ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.0ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 68ms (Views: 66.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:48:01 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.7ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (8.8ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.0ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 81ms (Views: 75.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:48:04 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (3.8ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.1ms)
+  Rendered common/_footer.html.erb (0.1ms)
+Completed 200 OK in 86ms (Views: 84.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:50:22 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.7ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (11.2ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.1ms)
+  Rendered common/_footer.html.erb (0.1ms)
+Completed 200 OK in 148ms (Views: 141.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:50:49 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.8ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (10.5ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.0ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 102ms (Views: 96.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:51:10 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.9ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (10.5ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.0ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 95ms (Views: 87.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:51:13 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (3.2ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.0ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 104ms (Views: 102.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:51:55 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.9ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (10.1ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.1ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 105ms (Views: 98.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:51:58 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (5.1ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.1ms)
+  Rendered common/_footer.html.erb (0.1ms)
+Completed 200 OK in 112ms (Views: 109.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:51:59 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (4.8ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.0ms)
+  Rendered common/_footer.html.erb (0.1ms)
+Completed 200 OK in 112ms (Views: 110.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:52:22 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.9ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (12.9ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.0ms)
+  Rendered common/_footer.html.erb (0.1ms)
+Completed 200 OK in 111ms (Views: 103.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:52:29 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (4.0ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.0ms)
+  Rendered common/_footer.html.erb (0.1ms)
+Completed 200 OK in 89ms (Views: 87.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 07:52:33 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (4.5ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.1ms)
+  Rendered common/_footer.html.erb (0.1ms)
+Completed 200 OK in 91ms (Views: 89.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 08:48:44 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (8.6ms)
+  Rendered common/_navbar.html.erb (0.4ms)
+  Rendered common/_flash.html.erb (0.2ms)
+  Rendered common/_footer.html.erb (0.3ms)
+Completed 200 OK in 491ms (Views: 475.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 08:49:38 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (7.4ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.0ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 66ms (Views: 62.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 08:49:41 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (2.6ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.0ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 08:50:12 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (2.7ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.8ms)
+  Rendered common/_footer.html.erb (0.1ms)
+Completed 200 OK in 68ms (Views: 66.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 08:50:33 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.6ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (8.3ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.1ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 85ms (Views: 79.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 08:50:36 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (2.7ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.1ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 68ms (Views: 66.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 08:50:38 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (2.7ms)
+  Rendered common/_navbar.html.erb (0.0ms)
+  Rendered common/_flash.html.erb (0.1ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 64ms (Views: 63.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 08:50:43 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (2.6ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.1ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 70ms (Views: 69.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 12:08:02 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (5.2ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (9.7ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.1ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 206ms (Views: 195.8ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 111.193.214.211 at 2017-04-03 12:08:03 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 12:18:15 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (12.5ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.1ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 101ms (Views: 93.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 12:46:22 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.6ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (7.7ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.1ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 79ms (Views: 73.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 12:46:25 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (3.1ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.1ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 66ms (Views: 64.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/categories" for 111.193.214.211 at 2017-04-03 12:46:30 +0000
+Cannot render console from 111.193.214.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (2.8ms)
+  Rendered common/_navbar.html.erb (0.1ms)
+  Rendered common/_flash.html.erb (0.2ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 64ms (Views: 62.7ms | ActiveRecord: 0.4ms)

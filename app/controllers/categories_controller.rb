@@ -1,6 +1,8 @@
 class CategoriesController < ApplicationController
   before_action :set_category, only: [:destroy, :show, :edit, :update]
   def index
+    flash[:alert] = "早安！你好！"
+    flash[:warning] = "警告你"
     @categories = Category.all
   end
   
